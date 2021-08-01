@@ -1,0 +1,44 @@
+.cuadrado-container {
+    max-width: 534px;
+    margin: 25px auto;
+}
+
+.triangulo-container {
+    max-width: 534px;
+    margin: 25px auto;
+}
+
+.circulo-container {
+    max-width: 534px;
+    margin: 25px auto;
+}
+
+.cuadrado-container input {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.triangulo-container input {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.circulo-container input {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.cuadrado-container button {
+    width: 48%;
+    margin: 3px;
+}
+
+.triangulo-container button {
+    width: 48%;
+    margin: 3px;
+}
+
+.circulo-container button {
+    width: 48%;
+    margin: 3px;
+}
