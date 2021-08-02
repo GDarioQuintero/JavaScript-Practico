@@ -4,5 +4,5 @@ const precio = document.getElementById("precio");
 const descuento = document.getElementById("descuento");
 
 function calcularValorPagar () {
-respuesta.innerHTML = "<strong>$" + calcularPrecio(precio.value, descuento.value) + "</strong>";
+respuesta.innerText ="$" + calcularPrecio(precio.value, descuento.value);
 }
