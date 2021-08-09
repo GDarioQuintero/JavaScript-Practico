@@ -14,3 +14,10 @@ En este repositorio están todos los archivos relacionados con el curso de JavaS
 - Segundo paso: Implementar las formulas en javascript
 - Tercer paso: Crear funciones
 - Cuarto paso: Integrar JavaScript con html
+
+## Taller Nº 3: Medidas de Tendencia Central
+
+- Primer paso: Definir las formula
+- Segundo paso: Implementar las formulas en javascript
+- Tercer paso: Crear funciones
+- Cuarto paso: Integrar JavaScript con html

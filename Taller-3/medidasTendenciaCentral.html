@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas de Tendencia Central</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Medidas de Tendencia Central (Media, Mediana y Moda)
+        </h1>
+    </header>
+    <main>
+        <section>
+            <p>Ingresa una lista de numeros para calcular la Media, Mediana y Moda</p>
+            <form action="">
+                <label for="n1">
+                    Numero 1
+                    <input type="number" id="n1">
+                </label>
+                <label for="n2">
+                    Numero 2
+                    <input type="number" id="n2">
+                </label>
+                <label for="n3">
+                    Numero 3
+                    <input type="number" id="n3">
+                </label>
+                <label for="4">
+                    Numero 4
+                    <input type="number" id="n4">
+                </label>
+                <label for="5">
+                    Numero 5
+                    <input type="number" id="n5">
+                </label>
+                <label for="6">
+                    Numero 6
+                    <input type="number" id="n6">
+                </label>
+                <div>
+                    <button type="button" onclick="calcularMedia()">Media</button><span id="input_media"></span>
+                </div>
+                <div>
+                    <button type="button" onclick="calcularMediana()">Mediana</button><span id="input_mediana"></span>
+                </div>
+                <div>
+                    <button type="button" onclick="calcularModa()">Moda</button><span id="moda"></span>
+                </div>
+             </form>
+        </section>
+    </main>
+    <script src="./medidasTendenciaCentrel.js"></script>
+</body>
+</html>
