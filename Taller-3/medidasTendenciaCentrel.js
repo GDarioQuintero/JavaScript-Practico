@@ -16,12 +16,14 @@ const obtenerList = () => {
 }   
 
 const calcularMedia = () => {
+    //el metodo reduce permite hacer cualquier operacion a la medida que recorre el array
     const sumaList = obtenerList().reduce(
         function (valorAcumulado = 0, nuevoElemento) {
             return valorAcumulado + nuevoElemento;
         }
-    );    
-    input_media.innerText = "La media es: " + sumaList / obtenerList().length;
+    );
+    let promedio = sumaList / obtenerList().length;
+    input_media.innerText = "La media es: " + promedio.toFixed(2);
 }
 
 const par = () => {
@@ -34,17 +36,56 @@ const par = () => {
 
 const calcularMediana = () => {
     let mediana = 0;
-    const mitadList = obtenerList().length / 2;
+    //Ordeno una lista de numeros
+    const numerosOrdenados = obtenerList();
+    numerosOrdenados.sort((a,b) => a-b);
+    const mitadList = numerosOrdenados.length / 2;
+
     if(par()){
         let p2 = mitadList;
         let p1 = p2 - 1;
-        mediana = (obtenerList()[p1]+ obtenerList()[p2]) / 2;
+        mediana = (numerosOrdenados[p1]+ numerosOrdenados[p2]) / 2;
     }else{
         let p = parseInt(mitadList);
-        mediana = obtenerList()[p];
+        mediana = numerosOrdenados[p];
     }
+
     input_mediana.innerText = "La mediana es: " + mediana;
 }
 
+const calcularFrecuencia = () => {
+    const listaCount = {};
+    obtenerList().map(
+        function (elemento) {
+            if (listaCount[elemento]){
+                listaCount[elemento] += 1;
+            }else {
+                listaCount[elemento] = 1;
+            }
+        }
+    );
+    return listaCount;
+}
+
+
+const ordenarArray = () => {
+    const listArray = Object.entries(calcularFrecuencia()).sort(
+        function (elementoA, elementoB) { 
+            return elementoA[1] - elementoB[1];
+        }
+    );
+    return listArray;
+}
+
+const calcularModa = () => {
+    const ultimo = ordenarArray()[(ordenarArray().length)-1];
+    const penultimo = ordenarArray()[(ordenarArray().length)-2];
+    if (ultimo[1]==penultimo[1]) {
+        input_moda.innerText = "La moda es: " + ultimo[0] + " y " + penultimo[0];
+    }else {
+        const moda = ultimo;
+        input_moda.innerText = "La moda es: " + moda[0];
+    }
+}
 
 

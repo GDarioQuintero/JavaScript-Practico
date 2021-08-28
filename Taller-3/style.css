@@ -26,13 +26,13 @@ header h1 {
 main {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
 main section {
     grid-column: 2;
-    margin-top: 50px;
-    padding: 30px;
+    margin-top: 30px;
+    padding: 20px;
     border: 1px solid rgb(1, 148, 1);
     border-radius: 10px;
 }
@@ -77,6 +77,6 @@ button:hover {
 }
 
 span {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: rgb(1, 148, 1);
 }
